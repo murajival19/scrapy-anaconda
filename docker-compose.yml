@@ -1,0 +1,12 @@
+version: "3"
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8888"
+    volumes:
+      - .:/workdir
+    stdin_open: true
+    tty: true
